@@ -1,0 +1,32 @@
+{
+    "name": "nice-cock-bot",
+    "version": "1.0.0",
+    "description": "Nice cock",
+    "main": "ncb.py",
+    "scripts": {
+      "start": "python ncb.py"
+    },
+    "author": "Stefan Saladino",
+    "license": "null",
+    "dependencies": {
+      "discord.py": "^1.7.3",
+      "python-dotenv": "^0.19.1"
+    }
+  }
+  
+{
+    "name": "nice-cock-bot",
+    "version": "1.0.0",
+    "description": "Nice cock",
+    "main": "ncb.py",
+    "scripts": {
+      "start": "python ncb.py"
+    },
+    "author": "Stefan Saladino",
+    "license": "null",
+    "dependencies": {
+      "discord.py": "^1.7.3",
+      "python-dotenv": "^0.19.1"
+    }
+  }
+  
