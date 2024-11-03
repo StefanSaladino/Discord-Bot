@@ -4,18 +4,13 @@ import os
 from discord.ext import commands
 import re
 
+# Load environment variables from the .env file
 load_dotenv()
 
-# Retrieve token from token.env file
-with open('token.env', 'r') as file:
-    TOKEN = file.read().strip()
-
-# Retrieve guild name from guild.env file
-with open('guild.env', 'r') as file:
-    GUILD_NAME = file.read().strip()
-
-with open('guild2.env', 'r') as file:
-    GUILD_NAME_2 = file.read().strip()
+# Retrieve token and guild names from .env file
+TOKEN = os.getenv('TOKEN')
+GUILD_NAME = os.getenv('GUILD')
+GUILD_NAME_2 = os.getenv('GUILD2')
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -71,7 +66,7 @@ async def on_message(message):
             url="https://youtu.be/4dJO0n1Wqjg", 
             description="Nice cock!",
             color=discord.Color.blue()
-    )
+        )
         # Set a thumbnail image, which will display the YouTube video thumbnail
         embed.set_thumbnail(url="https://img.youtube.com/vi/4dJO0n1Wqjg/hqdefault.jpg")
         # Send the embedded message
@@ -81,4 +76,3 @@ async def on_message(message):
     
 
 bot.run(TOKEN)
-
