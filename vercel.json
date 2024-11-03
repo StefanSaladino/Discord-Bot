@@ -1,18 +1,15 @@
-{
-    "install": {
-      "include": [
-        "^package\\.json$",
-        "^\\.env$"
-      ]
-    },
-    "restart": {
-      "exclude": [
-        "^public/",
-        "^dist/"
-      ],
-      "include": [
-        "^\\.env"
-      ]
-    },
-    "throttle": 900000
-  }
+  {
+    "version": 2,
+    "builds": [
+        {
+            "src": "*.py",
+            "use": "@liudonghua123/now-flask"
+        }
+    ],
+    "routes": [
+        {
+            "src": "(.*)",
+            "dest": "ncb.py"
+        }
+    ]
+  }  
